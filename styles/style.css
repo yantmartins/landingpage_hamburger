@@ -4,6 +4,7 @@
 @import url('home.css');
 @import url('menu.css');
 @import url('depoimentos.css');
+@import url('carrossel.css');
 
 :root{
     --color-primary-1:#fff9ea;
@@ -65,4 +66,7 @@
     text-align: center;
     font-size: 2.1875rem;
     margin-bottom: 20px;
+}
+section{
+    padding: 24px 8%;
 }

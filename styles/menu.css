@@ -1,7 +1,7 @@
 header{
     width: 100%;
     padding: 28px 8%;
-    /* background-color: var(--color-primary-1); */
+    background-color: var(--color-primary-1);
     top: 0;
     position: sticky;
     z-index: 3;
@@ -28,4 +28,34 @@ header{
     text-decoration: none;
     color: #1d1d1dad;
     font-weight: 600;
+}
+.btn-default-mobile, .mobile-menu{
+    display: none;
+}
+@media screen and (max-width:720px) {
+    .navbar, .nav_list, .btn-default{
+        display: none;
+    }
+    .btn-default-mobile{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    .mobile-nav-list .nav-item{
+        list-style: none;
+        text-align: center;
+    }
 }
